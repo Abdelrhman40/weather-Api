@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css//style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg my-3 navbar-dark bg-transparent">
+        <div class="container ">
+          <a class="navbar-brand d-flex" href="#">
+              <img src="images/logo.png" class="w-25 h-50 mx-1"> 
+              <div>
+                  <h5 class="m-0 p-0">Weather</h5> 
+                  <h6>tagline goes here</h6>
+              </div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="contant position-absolute h-50">
+        <img class="w-100" src="images/banner.png" >
+    </div>
+      <div class="container w-75 about">
+         
+        <div class="my-5">
+            <input type="search" onkeyup="searchForWheather(this.value)" class="form-control my-4" placeholder="search here...">
+            
+           <div class="item rounded-3 py-3">
+                <h3 id="location"> </h3> 
+                <div class="row  m-auto " id="forcaste">
+                    
+                    
+                </div>
+           </div>
+        </div>
+      </div>
+
+      <footer class="d-flex mt-5">
+          <div class="container d-flex justify-content-between">
+          <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          <div class="icons d-flex">
+              <div class="icon">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+              <div class="icon">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+              <div class="icon">
+              <a href="#">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </div>
+              <div class="icon">
+              <a href="#">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="loading">
+        <div class="lds-ripple"><div></div><div></div></div>
+      </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
